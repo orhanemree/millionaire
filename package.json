@@ -1,10 +1,10 @@
 {
-  "name": "",
-  "description": "",
+  "name": "millionaire",
+  "description": "\"Who Wants to be a Millionaire?\" template.",
   "author": {
-    "name" : "",
-    "email" : "",
-    "url" : ""
+    "name" : "orhanemree",
+    "email" : "orhanemre.dev@gmail.com",
+    "url" : "https://github.com/orhanemree"
   },
   "version": "1.0.0",
   "scripts": {
