@@ -35,21 +35,11 @@
                 </div>
                 <div id="scores">
                     <ul>
-                        <!-- TODO: use flex-reverse here -->
-                        <!-- TODO: add threshold for scores -->
                         <li v-for="(score, i) in game.scores" :key="score">
                             <div :class="`${game.current === i ? 'current' : ''}`">{{ score }}</div>
                         </li>
                     </ul>
                 </div>
-                <!-- <div id="lifelines">
-                    <div v-for="(l, i) in game.lifelines" :key="l">
-                        <button :disabled="l.used || ctrls.process" @click="lifeline(`${i}`)">{{ l.title }}</button>
-                        <div v-if="l.active">
-                            {{ l.text }}
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
