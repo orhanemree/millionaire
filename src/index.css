@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply
+    bg-[url("/src/assets/bg.png")]
+    bg-cover bg-center
+    text-white
+    flex items-center justify-center
+    w-screen h-screen
+    overflow-hidden
+    select-none
+}
+
+button {
+    @apply
+    border border-black
+    rounded
+    px-12
+    py-1
+    bg-gradient-to-b from-neutral-900 to-blue-900
+}
+
+#q {
+    @apply
+    w-[calc(100vw*1/2)]
+    relative
+}
+
+h2 {
+    @apply
+    text-3xl text-center
+    mb-5
+}
+
+#choices {
+    @apply
+    grid grid-cols-2
+    gap-3
+    text-2xl
+}
+
+.correct {
+    @apply
+    bg-gradient-to-b from-neutral-900 to-green-900
+}
+
+.wrong {
+    @apply
+    bg-gradient-to-b from-neutral-900 to-red-900
+}
+
+#lost, #won, #final {
+    @apply
+    absolute inset-0
+    bg-gradient-to-b from-neutral-900 to-blue-900
+    flex flex-col gap-3
+    items-center justify-center
+    rounded
+}
+
+#final div {
+    @apply
+    flex items-center justify-center
+    gap-5
+}
+
+#scores {
+    @apply
+    absolute
+    right-5
+    top-5
+    text-3xl
+}
+
+#scores ul {
+    @apply
+    flex flex-col-reverse
+    gap-4
+}
+
+#scores ul div {
+    @apply
+    border border-black
+    rounded
+    px-12
+    py-1
+}
+
+#scores ul div:not(.current) {
+    @apply
+    bg-gradient-to-b from-neutral-900 to-blue-900
+}
+
+.current {
+    @apply
+    bg-gradient-to-b from-neutral-900 to-orange-900
+}
